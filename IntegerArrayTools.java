@@ -104,7 +104,7 @@ public class IntegerArrayTools
     return sum;
   }
   
-  public int getMax()
+  public int getMax() //Finds and returns the largest number in the array.
   {
     int maxNum = arrayData[0];
     for (int i = 0; i < arrayCount; i++)
@@ -112,18 +112,26 @@ public class IntegerArrayTools
       if (arrayData[i] > maxNum)
       {
         maxNum = arrayData[i];
-        maxPos = i;
       }
     }
     return maxNum;
   }
   
-  public int getMaxIndex()
+  public int getMaxIndex() //Finds and returns the index of the largest number.
   {
+    int max = arrayData[0];
+    for (int x = 0; x < arrayCount; x++)
+    {
+      if (arrayData[x] > max)
+      {
+        max = arrayData[x];
+        maxPos = x;
+      }
+    }
     return maxPos;
   }
   
-  public int getMin()
+  public int getMin() //Finds and returns the smallest number in the array.
   {
     int minNum = arrayData[0];
     for (int i = 0; i < arrayCount; i++)
@@ -137,8 +145,17 @@ public class IntegerArrayTools
     return minNum;
   }
   
-  public int getMinIndex()
+  public int getMinIndex() //Finds and returns the index of the smallest number.
   {
+    int min = arrayData[0];
+    for (int x = 0; x < arrayCount; x++)
+    {
+      if (arrayData[x] < min)
+      {
+        min = arrayData[x];
+        minPos = x;
+      }
+    }
     return minPos;
   }
     

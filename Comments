@@ -1,0 +1,15 @@
+This code technically works with the main() method that is written here ... 
+BUT!
+  There's one significant issue that could arise if you try to use this code elsewhere.
+  getMinIndex and getMaxIndex only work if you have already run getMin and getMax (respectively).
+  If you re-arrange the order of the code in main(), it will return 0 as the index of the
+  min and max values every time.
+    One solution is to add the loop transversal of the array in getMinIndex and getMaxIndex.
+    Another solution is to have the Index methods call the Max/Min methods before returning a value.
+  
+  Better to write flexible code that can work in a variety of situations.
+
+Also - instructions said to include javadoc comments with each method.
+Yours are missing!  Please add them (including @return) and re-submit.
+
+8/10 right now, 9/10 when resubmitted.

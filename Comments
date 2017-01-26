@@ -13,3 +13,10 @@ Also - instructions said to include javadoc comments with each method.
 Yours are missing!  Please add them (including @return) and re-submit.
 
 8/10 right now, 9/10 when resubmitted.
+
+Update Jan. 26:  
+  Issue #1 resolved
+  Issue #2 not yet.  You have some simple comments, but they're not in javadoc format.
+    They won't appear when you create the documentation of your code.
+    Javadoc would start with /** and end with */ and should include @return for each method.
+ Up to 8.5 / 10; keep going!

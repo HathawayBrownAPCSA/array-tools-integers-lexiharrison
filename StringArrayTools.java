@@ -3,6 +3,8 @@
   * 
   * The array has a fixed length MAX_NUMS but the actual number of elements
   * that are used can vary.
+  * 
+  * @author Lexi Harrison 01/26/2017
   */
 
 import java.util.Scanner;
@@ -94,7 +96,10 @@ public class StringArrayTools
   }
   
   // -------------------- METHODS TO WORK WITH THE ARRAY --------------------------
-  public String getMax() //Finds and returns the string that comes last alphabetically.
+  /** Find the "largest" string (last string alphabetically)
+    * @return The last string alphabetically
+    */
+  public String getMax() 
   {
     String max = arrayData[0];
     for (int i = 0; i < arrayCount; i++)
@@ -107,7 +112,10 @@ public class StringArrayTools
     return max;
   }
   
-  public int getMaxIndex() //Finds and returns the index of the string that comes last alphabetically.
+  /** Finds the index of the largest string in the array.
+    * @return The index of the string that comes last alphabetically.
+    */
+  public int getMaxIndex() 
   {
     String max = arrayData[0];
     for (int x = 0; x < arrayCount; x++)
@@ -121,7 +129,10 @@ public class StringArrayTools
     return maxPos;
   }
   
-  public String getMin() //Finds and returns the string that comes first alphabetically.
+  /** Finds and returns the string that comes first alphabetically in the array.
+    * @return The first string in the array alphabetically.
+    */
+  public String getMin() 
   {
     String min = arrayData[0];
     for (int i = 0; i < arrayCount; i++)
@@ -134,7 +145,10 @@ public class StringArrayTools
     return min;
   }
   
-  public int getMinIndex() //Finds and returns the index of the smallest number.
+  /** Finds and returns the index of the smallest string.
+    * @return The index of the first string alphabetically.
+    */
+  public int getMinIndex() 
   {
     String min = arrayData[0];
     for (int x = 0; x < arrayCount; x++)
